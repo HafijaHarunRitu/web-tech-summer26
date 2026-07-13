@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <script src="../web-tech-summer26/lab3.js"defer></script>
+
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    
+    
+    <form name="registrationForm" onsubmit="return validate(this);" method="POST" action="submit_page.php">
+        
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <span id="fname-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            <span id="lname-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <span id="gender-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" name="father">
+            <span id="father-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="mother">Mother's Name:</label>
+            <input type="text" id="mother" name="mother">
+            <span id="mother-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="email-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+            <span id="phone-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <span id="username-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="password-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <div>
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm">
+            <span id="confirm-error" style="color: red;"></span>
+        </div>
+        <br>
+
+        <button type="submit">Register</button>
+        
+    </form>
+</body>
+</html>
